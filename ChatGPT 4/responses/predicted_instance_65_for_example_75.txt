@@ -1,0 +1,51 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="75" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="AbstractClass">
+                <entity>junit.framework.TestSuite</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.tests.SuiteTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.samples.AllTests</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>junit.framework.Test</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>junit.framework.TestSuite</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestCase</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.tests.TestCaseTest</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.tests.Failure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.tests.Success</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.samples.SimpleTest</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.samples.VectorTest</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.samples.money.MoneyTest</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

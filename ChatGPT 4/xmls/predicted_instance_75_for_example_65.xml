@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<microArchitecture number="65" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertFigure</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertDependency</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.BouncingDrawing</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.AnimationDecorator</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.JavaDrawApp</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.JavaDrawApplet</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.JavaDrawViewer</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.URLTool</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.FollowURLTool</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.MySelectionTool</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.PatternPainter</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.Animator</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.net.NetApp</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.net.NodeFigure</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.nothing.NothingApp</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.nothing.NothingApplet</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertApplication</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertApplet</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertFigureCreationTool</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>CH.ifa.draw.framework.Figure</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.standard.CompositeFigure</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.standard.StandardDrawing</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupFigure</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertFigure</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RoundRectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.EllipseFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ImageFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.NumberTextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.BorderDecorator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.FontSizeHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RadiusHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ConnectedTextTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TextTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ScribbleTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.BorderTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupCommand</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.UngroupCommand</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.InsertImageCommand</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowTextLocator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ArrowTip</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineLocator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineConnector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ChopEllipseConnector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ShortestDistanceConnector</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>

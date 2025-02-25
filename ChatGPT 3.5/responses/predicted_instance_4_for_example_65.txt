@@ -1,0 +1,105 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="1" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="Class">
+                <entity>uml.ui.ToolPalette</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.DiagramContainer</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.ColorAction</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.FontAction</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.BuildAction</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.PrintableAction</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.ExportAction</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.ColorTile</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>uml.ui.JFontChooser</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>uml.diagram.DesignItem</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>uml.diagram.ClassItem</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>uml.diagram.InterfaceItem</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>uml.diagram.CompositionItem</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>uml.diagram.GeneralizationItem</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>uml.diagram.DependencyItem</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.ClassFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.InterfaceFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.NoteFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.AssociationLink</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.CompositionLink</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.GeneralizationLink</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.DependencyLink</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.RealizationLink</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.AssociationLinkEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.CompositionLinkEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.GeneralizationLinkEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.DependencyLinkEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.ClassEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.InterfaceEditor</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>uml.diagram.NoteEditor</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

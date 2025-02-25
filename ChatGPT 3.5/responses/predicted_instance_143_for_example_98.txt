@@ -1,0 +1,39 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="99" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="Class">
+                <entity>src.COMPOSITE.CompositeDemo</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>src.COMPOSITE.DirComponent</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>src.COMPOSITE.FileComponent</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>src.COMPOSITE.FileSystemComponent</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>src.COMPOSITE.FileSystemComponent</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>src.COMPOSITE.DirComponent</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>src.COMPOSITE.FileComponent</entity>
+            </leaf>
+        </leaves>
+    </roles>
+    <comment>
+The Composite pattern is used here to represent a file system structure where both files and directories are treated uniformly. The `FileSystemComponent` class serves as the base class for both `DirComponent` and `FileComponent`, allowing for a tree structure where directories can contain both files and other directories. The `CompositeDemo` class demonstrates the usage of this pattern by creating a directory structure and calculating the total size of the directories and files.
+    </comment>
+</microArchitecture>
+```

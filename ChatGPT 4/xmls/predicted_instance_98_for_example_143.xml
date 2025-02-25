@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<microArchitecture number="143" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="Class">
+                <entity>com.taursys.servlet.ServletForm</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>com.taursys.servlet.DefaultMessageForm</entity>
+            </client>
+            <client roleKind="Class">
+                <entity>com.taursys.servlet.ServletApp</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>com.taursys.servlet.respond.Responder</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>com.taursys.servlet.respond.HTMLResponder</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>com.taursys.servlet.respond.NoResponseResponder</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>com.taursys.servlet.respond.ClientRedirectResponder</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>com.taursys.servlet.respond.ErrorResponder</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>com.taursys.servlet.respond.StreamResponder</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>com.taursys.servlet.respond.AbstractResponder</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>com.taursys.servlet.respond.ContentResponder</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>

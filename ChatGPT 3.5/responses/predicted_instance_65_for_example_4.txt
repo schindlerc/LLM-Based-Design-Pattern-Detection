@@ -1,0 +1,42 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="4" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.BaseTestRunner</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>junit.framework.Test</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>junit.extensions.TestDecorator</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>junit.extensions.RepeatedTest</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.extensions.ExceptionTestCase</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.extensions.TestSetup</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.extensions.ActiveTestSuite</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestSuite</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestCase</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

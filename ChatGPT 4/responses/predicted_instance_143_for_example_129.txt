@@ -1,0 +1,22 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="129" designPatternName="Composite">
+    <roles>
+        <composites>
+            <composite roleKind="Class">
+                <entity>src.COMPOSITE.DirComponent</entity>
+            </composite>
+        </composites>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>src.COMPOSITE.FileSystemComponent</entity>
+            </component>
+        </components>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>src.COMPOSITE.FileComponent</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

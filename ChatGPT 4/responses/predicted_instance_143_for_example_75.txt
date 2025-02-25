@@ -1,0 +1,23 @@
+**XML Annotation:**
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="1" designPatternName="Composite">
+    <roles>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>src.COMPOSITE.FileSystemComponent</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>src.COMPOSITE.DirComponent</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>src.COMPOSITE.FileComponent</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

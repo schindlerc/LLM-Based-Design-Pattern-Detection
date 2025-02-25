@@ -1,0 +1,94 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="1" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client>CH.ifa.draw.framework.Figure</client>
+            <client>CH.ifa.draw.framework.Drawing</client>
+            <client>CH.ifa.draw.framework.DrawingView</client>
+            <client>CH.ifa.draw.framework.Tool</client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>CH.ifa.draw.standard.CompositeFigure</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupFigure</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolygonFigure</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.EllipseFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RoundRectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ImageFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.BorderDecorator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.NumberTextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolygonTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolygonHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolygonScaleHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TriangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.DiamondFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineConnector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ShortestDistanceConnector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineDecoration</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ArrowTip</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.Handle</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

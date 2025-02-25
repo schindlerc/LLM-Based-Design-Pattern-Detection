@@ -1,0 +1,111 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="143" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="AbstractClass">
+                <entity>CH.ifa.draw.framework.Drawing</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>CH.ifa.draw.framework.Figure</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.standard.CompositeFigure</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.standard.StandardDrawing</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupFigure</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.samples.javadraw.BouncingDrawing</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>CH.ifa.draw.samples.pert.PertFigure</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.EllipseFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ImageFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RoundRectangleFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.LineConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowConnection</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.NumberTextFigure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.BorderDecorator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.BorderTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ConnectedTextTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ElbowHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.FontSizeHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.GroupCommand</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.InsertImageCommand</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.PolyLineLocator</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.RadiusHandle</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ScribbleTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.ShortestDistanceConnector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.TextTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>CH.ifa.draw.figures.UngroupCommand</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```

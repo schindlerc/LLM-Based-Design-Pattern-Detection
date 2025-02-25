@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<microArchitecture number="75" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.BaseTestRunner</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuite</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestCaseClassLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestCollector</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ClassPathTestCollector</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.LoadingTestCollector</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.StandardTestSuiteLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ReloadingTestSuiteLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuiteLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestRunContext</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.FailureDetailView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.SimpleTestCollector</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestRunView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuitePanel</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestTreeModel</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestListener</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestFailure</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestResult</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.Version</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ClassLoaderTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ExceptionTestCaseTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ActiveTestSuite</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.RepeatedTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ExceptionTestCase</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSetup</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestDecorator</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestCase</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuite</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestListenerTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.SorterTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ActiveTestTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestCaseClassLoaderTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.NoTestCases</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.NotPublicTestCase</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.LoadedFromJar</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.InheritedTestCase</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.Failure</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestCaseTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ExceptionTestCaseTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ExtensionTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TextRunnerTest</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestRunView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestRunContext</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuitePanel</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.FailureDetailView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.DefaultFailureDetailView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSelector</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestHierarchyRunView</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestRunner</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.TestSuiteLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.StandardTestSuiteLoader</entity>
+            </client>
+            <client roleKind="AbstractClass">
+                <entity>junit.runner.ReloadingTestSuiteLoader</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>junit.framework.Test</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>junit.framework.TestSuite</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.extensions.TestSetup</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.extensions.ExceptionTestCase</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.extensions.RepeatedTest</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.extensions.ActiveTestSuite</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.runner.BaseTestRunner</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.runner.ClassPathTestCollector</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.runner.LoadingTestCollector</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.runner.TestCaseClassLoader</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>junit.runner.SimpleTestCollector</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestCase</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestResult</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestFailure</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.AssertionFailedError</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.framework.TestListener</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestSuiteLoader</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.StandardTestSuiteLoader</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.ReloadingTestSuiteLoader</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestCollector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestRunView</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestRunContext</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.FailureDetailView</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.DefaultFailureDetailView</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestSuitePanel</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestHierarchyRunView</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestSelector</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>junit.runner.TestRunner</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>

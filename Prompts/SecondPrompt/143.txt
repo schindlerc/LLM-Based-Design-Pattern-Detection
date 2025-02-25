@@ -1,0 +1,155 @@
+File: src.COMPOSITE.DirComponent
+```java
+package src.COMPOSITE;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+
+public class DirComponent extends FileSystemComponent {
+  Vector dirContents = new Vector();
+
+  public DirComponent(String cName) {
+    super(cName);
+  }
+
+  public void addComponent(FileSystemComponent fc)
+  throws CompositeException {
+    dirContents.add(fc);
+  }
+
+  public FileSystemComponent getComponent(int location)
+  throws CompositeException {
+    return (FileSystemComponent) dirContents.elementAt(
+             location);
+  }
+
+  public long getComponentSize() {
+    long sizeOfAllFiles = 0;
+    Enumeration e = dirContents.elements();
+    while (e.hasMoreElements()) {
+      FileSystemComponent component =
+        (FileSystemComponent) e.nextElement();
+      sizeOfAllFiles = sizeOfAllFiles +
+                       (component.getComponentSize());
+    }
+    return sizeOfAllFiles;
+  }
+
+} // End of class
+
+```
+
+File: src.COMPOSITE.FileSystemComponent
+```java
+package src.COMPOSITE;
+
+
+
+public abstract class FileSystemComponent {
+  String name;
+
+  public FileSystemComponent(String cName) {
+    name = cName;
+  }
+  public void addComponent(FileSystemComponent component)
+  throws CompositeException {
+    throw new CompositeException(
+      "Invalid Operation. Not Supported");
+  }
+  public FileSystemComponent getComponent(int componentNum)
+  throws CompositeException {
+    throw new CompositeException(
+      "Invalid Operation. Not Supported");
+  }
+
+  public abstract long getComponentSize();
+
+} // End of class FileSystemComponent
+
+```
+
+File: src.COMPOSITE.FileComponent
+```java
+package src.COMPOSITE;
+
+
+
+public class FileComponent extends FileSystemComponent {
+  private long size;
+
+  public FileComponent(String cName, long sz) {
+    super(cName);
+    size = sz;
+  }
+
+  public long getComponentSize() {
+    return size;
+  }
+
+} // End of class
+
+```
+
+File: src.COMPOSITE.CompositeException
+```java
+package src.COMPOSITE;
+
+
+
+public class CompositeException extends Exception {
+
+  public CompositeException(String msg) {
+    super(msg);
+  }
+} // End of class
+
+```
+
+File: src.COMPOSITE.CompositeDemo
+```java
+package src.COMPOSITE;
+
+
+
+public class CompositeDemo {
+  public static final String SEPARATOR = ", ";
+
+  public static void main(String[] args) {
+    FileSystemComponent mainFolder =
+      new DirComponent("Year2000");
+    FileSystemComponent subFolder1 = new DirComponent("Jan");
+
+    FileSystemComponent subFolder2 = new DirComponent("Feb");
+
+
+    FileSystemComponent folder1File1 =
+      new FileComponent("Jan1DataFile.txt",1000);
+    FileSystemComponent folder1File2 =
+      new FileComponent("Jan2DataFile.txt",2000);
+    FileSystemComponent folder2File1 =
+      new FileComponent("Feb1DataFile.txt",3000);
+    FileSystemComponent folder2File2 =
+      new FileComponent("Feb2DataFile.txt",4000);
+
+    try {
+      mainFolder.addComponent(subFolder1);
+      mainFolder.addComponent(subFolder2);
+      subFolder1.addComponent(folder1File1);
+      subFolder1.addComponent(folder1File2);
+      subFolder2.addComponent(folder2File1);
+      subFolder2.addComponent(folder2File2);
+    } catch (CompositeException ex) {
+    }
+
+    System.out.println(" Main Folder Size= " +
+                       mainFolder.getComponentSize() + "kb");
+    System.out.println(" Sub Folder1 Size= " +
+                       subFolder1.getComponentSize() + "kb");
+    System.out.println(" File1 in Folder1 size= " +
+                       folder1File1.getComponentSize() + "kb");
+
+  }
+}
+```
+

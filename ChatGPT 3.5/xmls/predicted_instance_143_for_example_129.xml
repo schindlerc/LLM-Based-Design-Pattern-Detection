@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<microArchitecture number="1" designPatternName="Composite">
+    <roles>
+        <composites>
+            <composite roleKind="Class">
+                <entity>src.COMPOSITE.DirComponent</entity>
+            </composite>
+            <composite roleKind="Class">
+                <entity>src.COMPOSITE.FileComponent</entity>
+            </composite>
+        </composites>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>src.COMPOSITE.FileSystemComponent</entity>
+            </component>
+        </components>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>src.COMPOSITE.CompositeException</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>

@@ -1,0 +1,48 @@
+```xml
+<?xml version="1.0" ?>
+<microArchitecture number="143" designPatternName="Composite">
+    <roles>
+        <clients>
+            <client roleKind="Class">
+                <entity>uml.ui.ToolPalette</entity>
+            </client>
+        </clients>
+        <components>
+            <component roleKind="AbstractClass">
+                <entity>diagram.tool.Tool</entity>
+            </component>
+        </components>
+        <composites>
+            <composite roleKind="Class">
+                <entity>diagram.tool.CompositeTool</entity>
+            </composite>
+        </composites>
+        <leaves>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.ClipboardTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.FigureDraggingTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.FigureTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.FigureShappingTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.SelectionTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.LinkShappingTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.EditingTool</entity>
+            </leaf>
+            <leaf roleKind="Class">
+                <entity>diagram.tool.LinkTool</entity>
+            </leaf>
+        </leaves>
+    </roles>
+</microArchitecture>
+```
